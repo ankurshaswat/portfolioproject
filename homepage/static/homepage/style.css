@@ -1,0 +1,94 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.x {
+    background-color: transparent;
+    width: 0%;
+    padding: 25px;
+	 font-size: 28px;
+color: #000;
+}
+.x2 {
+    background-color: transparent;
+    width: 550px;
+    padding: 25px;
+	 font-size: 28px;
+color: #000;
+	margin-left:-50%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img/back1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/back2.jpg");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("img/back3.jpg");
+  min-height: 100%;
+}
+.bgimg-4 {
+  background-image: url("img/back4.jpg");
+  min-height: 100%;
+}
+.bgimg-5 {
+  background-image: url("img/back5.jpg");
+  min-height: 90%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  margin-left: 60%;
+  color: #000;
+  font-size:28px;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
+}
+
