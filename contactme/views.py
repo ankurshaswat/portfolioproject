@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse
 # Create your views here.
 from django.http import HttpResponse
-
+from django.utils import timezone
 
 def index(request):
     context={}
@@ -19,10 +19,10 @@ def get_message(request):
         form = MessageForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect(reverse('contactme/thanks.html'))
+            message=form.save(commit=False)
+            message.pub_date=timezone.now()
+            message.save()
+            return HttpResponseRedirect('contactme/thanks.html')
 
     # if a GET (or any other method) we'll create a blank form
     else:
