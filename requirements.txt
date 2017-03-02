@@ -1,5 +1,13 @@
+adium-theme-ubuntu==0.3.4
+beautifulsoup4==4.5.1
 dj-database-url==0.4.1
 Django==1.10.4
 gunicorn==19.6.0
 psycopg2==2.6.2
+pytz==2014.10
+requests==2.12.4
+sqlparse==0.1.18
+ubuntuone-client-data==14.4
+unity-lens-photos==1.0
+virtualenv==15.1.0
 whitenoise==3.2
