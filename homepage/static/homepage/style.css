@@ -39,21 +39,21 @@ color: #000;
 }
 .bgimg-1 {
   background-image: url("img/back1.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 
 .bgimg-2 {
   background-image: url("img/back2.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 
 .bgimg-3 {
   background-image: url("img/back3.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 .bgimg-4 {
   background-image: url("img/back4.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 .bgimg-5 {
   background-image: url("img/back5.jpg");

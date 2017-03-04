@@ -1,5 +1,29 @@
-<form action="message/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit" />
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'contactme/bootstrap.min.css' %}" />
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+
+<div class="container" style=padding-top:200px>
+<form class="form-signin" action="message/" method="post"> 		
+	  <h2 class="form-signin-heading" style=text-align:center>Type your Message Here</h2><br><br>    
+     {% csrf_token %}
+	{{form}}
+    <br><br><br>
+	<button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
 </form>
+</div>
+
+
+
+
+
+
+

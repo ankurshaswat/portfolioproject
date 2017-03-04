@@ -6,8 +6,9 @@ from django.forms import ModelForm
 
 # Create your models here.
 class Message(models.Model):
-    messager_name=models.CharField(max_length=30)
-    message_text = models.CharField(max_length=200)
+    messager_name=models.CharField(max_length=30,default="What's Your name")
+    messager_email=models.CharField(max_length=50,default='Email comes here')
+    message_text = models.CharField(max_length=400,default='Hello')
     pub_date = models.DateTimeField('date published')
     def __unicode__(self):
         return self.messager_name
