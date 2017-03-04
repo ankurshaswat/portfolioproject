@@ -1,6 +1,6 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'contactme/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'contactme/styles.css' %}" />
 
 
 <!DOCTYPE html>
@@ -12,12 +12,13 @@
 <body>
 
 <div class="container" style=padding-top:200px>
-<form class="form-signin" action="message/" method="post"> 		
-	  <h2 class="form-signin-heading" style=text-align:center>Type your Message Here</h2><br><br>    
+<h2 class="form-signin-heading" style=text-align:center>Type your Message Here</h2><br><br>
+<form class="form-signin" action="message/" method="post" style=display:inline> 		
+	      
      {% csrf_token %}
 	{{form}}
     <br><br><br>
-	<button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+	<button class="btn-lg" type="submit" style="text-align:center">Send</button>
 </form>
 </div>
 
