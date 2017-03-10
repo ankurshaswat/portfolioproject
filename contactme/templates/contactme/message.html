@@ -16,7 +16,7 @@
 <form class="form-signin" action="message/" method="post" style=display:inline> 		
 	      
      {% csrf_token %}
-	{{form}}
+	{{form.as_p}}
     <br><br><br>
 	<button class="btn-lg" type="submit" style="text-align:center">Send</button>
 </form>
